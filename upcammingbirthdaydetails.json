@@ -1,0 +1,23 @@
+[
+  {
+    "name": "John Doe",
+    "position": "Software Engineer",
+    "address": "123 Main St",
+    "dob": "1990-10-01",
+    "profileImg": "https://tse2.mm.bing.net/th?id=OIP.EVCGXvrjsvMrhfOX3su_FgHaHa&pid=Api&P=0&h=180"
+  },
+  {
+    "name": "Jane Smith",
+    "position": "Product Manager",
+    "address": "456 Oak St",
+    "dob": "1992-10-03",
+    "profileImg": "https://tse1.mm.bing.net/th?id=OIP.L9B1n8lj7aocldq2QeKEtgHaHa&pid=Api&P=0&h=180"
+  },
+  {
+    "name": "Mark Taylor",
+    "position": "HR Manager",
+    "address": "789 Pine St",
+    "dob": "1988-10-05",
+    "profileImg": "https://tse4.mm.bing.net/th?id=OIP.tX36supoUyT_GOZtBHrQJgHaHa&pid=Api&P=0&h=180"
+  }
+]

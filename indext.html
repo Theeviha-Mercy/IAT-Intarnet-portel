@@ -9,15 +9,12 @@
   <style>
    body {
     /* background: linear-gradient(to right, rgb(189, 120, 120), rgb(92, 92, 142), rgb(188, 113, 202)); */
-    background-color:#fcfafd ;
+    background-color:hsl(300, 2%, 48%) ;
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
     color: #333;
 }
-
-
-
 
     
     .logo {
@@ -87,22 +84,16 @@
     display: block; 
 }
 
-    .card {
-      border-radius: 15px;
-      padding: 15px;
-      background-color: #f8f9fa;
-    }
 
-    .task-progress {
-      width: 100%;
-      height: 20px;
-      background-color: #e9ecef;
-    }
 
-    .progress-bar {
-      height: 100%;
-      background-color: #0d6efd;
-    }
+.card {
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar {
+  padding: 10px; 
+}
 
     .date {
       font-size: 1.5rem;
@@ -114,16 +105,7 @@
       color: #6c757d;
     }
 
-    .event-title {
-      font-weight: bold;
-      color: #343a40;
-    }
-
-    .badge {
-      font-size: 0.75rem;
-      padding: 5px 10px;
-      border-radius: 10px;
-    }
+    
 
     .badge-pending {
       background-color: #ffc107;
@@ -146,13 +128,14 @@
 
     .birthday-card {
       text-align: center;
-      height: 427px;
+      height: 450px;
       width: 300px;
       margin-left: 12px;
-      padding: 20px;
+      padding: 25px;
       background-color: #f9f9f9;
-      border-radius: 15px;
+      border-radius: 5px;
       box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+      border: none; 
     }
 
     .card-header {
@@ -162,8 +145,8 @@
     }
 
     .profile-img {
-      border-radius: 50%;
-      border: 3px solid #090582;
+      border-radius: 0%;
+     
       width: 120px;
       height: 120px;
       object-fit: cover;
@@ -189,41 +172,35 @@
     .upcoming-birthday {
       margin-top: 20px;
       padding-top: 20px;
-      border-top: 2px solid #ddd;
+      
       font-size: 18px;
     }
 
     .calendar {
-  width: 320px; 
-  height:300px; 
+  width: 300px;
+  height: 300px;
   background-color: #f9f9f9;
-  border-radius: 10px;
   padding: 20px;
+  border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 5px; 
-  margin-bottom: 20px;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
-    .calendar-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
+  
 
     .calendar-header i {
       cursor: pointer;
       color: #6c757d;
     }
 
+     
     .days {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      gap: 3px;
-      font-size: 11px;
+      gap: -1px;
+      font-size: 10px;
     }
 
     .day {
@@ -231,6 +208,7 @@
       border-radius: 50%;
       transition: background-color 0.3s;
     }
+
 
     .day:hover {
       background-color: #e9ecef;
@@ -241,54 +219,10 @@
         border-radius: 50%;
     }
 
-
-    .event {
-      background-color: #dc3545;
-      color: white;
-    }
-
     .other-month {
       color: #adb5bd;
     }
 
-    .avatars {
-      display: flex;
-      align-items: center;
-    }
-
-    .avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 5px;
-    }
-
-    .add-button {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background-color: #007bff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    .notification {
-      margin-right: 20px;
-      cursor: pointer;
-      position: relative;
-    }
-    .avatar-group img {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-      margin-right: -10px;
-      
-      border: 2px solid #fff;
-    }
     .employee-details {
             margin-top: 20px;
             font-size: 18px;
@@ -298,23 +232,6 @@
             font-size: 24px;
             padding: 10px;
         }
-
-        .event-card {
-    height: 200px;
-    width: 200px; 
-    overflow: hidden;
-    position: relative; 
-}
-
-
-.avatar-group img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    margin-right: -10px;
-    border: 2px solid #fff;
-}
-
 
  
   #image-gallery-image {
@@ -337,6 +254,7 @@
     color: #090582;
     font-size: 16px;
   } */
+       
         
        
 
@@ -349,7 +267,7 @@
         <img src="logo.png" alt="Logo"> 
     </div>
     <h4 style="color: #090582; text-align: center;">IAT Technologies</h4>
-    <hr style="border: none; height: 2px; background-color: #ff8412; margin: 5px auto; width: 50%;"> <!-- Orange line with margin -->
+    <hr style="border: none; height: 4px; background-color: #ff8412; margin: 5px auto; width: 50%;"> 
   
     
     <a href="dashboard.html" class="active mb-3"><i class="bi bi-grid-fill"></i> Dashboard</a>
@@ -372,350 +290,348 @@
 
   <div class="content">
     <div class="col-md-12">
-        <div class="col d-flex align-items-center mb-1 mx-2">
-            <div class="d-flex justify-content-center align-items-center flex-column mx-auto bg-light p-3 rounded">
-              <div class="portal-title  fw-bold" style="color: #ff8412; font-size: 2rem;">IATT Intranet Portal</div>
-              <div id="current-date" class="text-primary"></div>
-                <div id="current-date" class="text-primary"></div>
+        <div class="row mb-1 mx-2">
+            <div class="col-md-3  align-items-start" style="width: 400px; height: 20vh;">
+              <div class="d-flex justify-content-center align-items-center flex-column bg-light p-3 rounded" style="height:80%;">
+                    <div class="portal-title fw-bold" style="color: #ff8412; font-size: 1rem;">IATT Intranet Portal</div>
+                    <p></p>
+                    <div id="current-date" class="text-color-#090582"></div>
+                </div>
+                <div class="notification mt-3">
+                   
+                </div>
             </div>
-            <div class="notification">
-                
-            </div>
-        </div>
-    </div>
     
 
-
-    <div class="row">
-   
-      <div class="col-md-8 mb-1">
-        <div class="card rounded-4 h-100" style="width: 100%;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="logo.png" class="img-fluid" alt="Welcome Image">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title" style="color: #ff8412;">Welcome, IAT Technologies</h5>
-                <p class="welcome-card-text"style="color:#090582">Where innovation meets excellence in technology. Our mission is to shape professionals, drive innovation, and propel you towards new horizons in the digital landscape.</p>
+            <div class="d-flex justify-content-between">
+              <div class="col-12 col-sm-6 col-md-8 col-lg-6 align-items-start mb-3">
+                <div class="card  border-0" style="width: 550px; height: 210px ">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="logo.png" class="img-fluid" alt="Welcome Image" style="height: 120px; width: 120px;">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title" style="color: #ff8412;">Welcome, IAT Technologies</h5>
+                        <p class="welcome-card-text" style="font-size: 14px; color: #090582;">
+                          Where innovation meets excellence in technology. Our mission is to shape professionals, drive innovation, and propel you towards new horizons in the digital landscape.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+             
+              <div class="calendar card ms-3" style="height: 210px; border: none;">
+                <div class="calendar-header">
+                  <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; margin-top: -20px; margin-bottom: -2px;">
+                    <i class="bi bi-chevron-left" style="cursor: pointer; color: #090582;"></i>
+                    <span style="font-size: 12px; font-weight: bold; color: #090582; margin-top: -1px; margin-bottom: -1px;">Sep 2024</span>
+                    <i class="bi bi-chevron-right" style="cursor: pointer; color: #090582;"></i>
+                  </div>
+                </div>
+                <div class="days">
+                  <div class="fw-bold" style="color: #090582;">SUN</div>
+                  <div class="fw-bold" style="color: #090582;">MON</div>
+                  <div class="fw-bold" style="color: #090582;">TUE</div>
+                  <div class="fw-bold" style="color: #090582;">WED</div>
+                  <div class="fw-bold" style="color: #090582;">THU</div>
+                  <div class="fw-bold" style="color: #090582;">FRI</div>
+                  <div class="fw-bold" style="color: #090582;">SAT</div>
+            
+                  <div class="other-month">30</div>
+                  <div class="other-month">31</div>
+                  <div class="day" data-date="1">1</div>
+                  <div class="day" data-date="2">2</div>
+                  <div class="day" data-date="3">3</div>
+                  <div class="day" data-date="4">4</div>
+                  <div class="day" data-date="5">5</div>
+                  <div class="day" data-date="6">6</div>
+                  <div class="day" data-date="7">7</div>
+                  <div class="day" data-date="8">8</div>
+                  <div class="day" data-date="9">9</div>
+                  <div class="day" data-date="10">10</div>
+                  <div class="day" data-date="11">11</div>
+                  <div class="day" data-date="12">12</div>
+                  <div class="day" data-date="13">13</div>
+                  <div class="day" data-date="14">14</div>
+                  <div class="day" data-date="15">15</div>
+                  <div class="day" data-date="16">16</div>
+                  <div class="day" data-date="17">17</div>
+                  <div class="day" data-date="18">18</div>
+                  <div class="day" data-date="19">19</div>
+                  <div class="day" data-date="20">20</div>
+                  <div class="day" data-date="21">21</div>
+                  <div class="day" data-date="22">22</div>
+                  <div class="day" data-date="23">23</div>
+                  <div class="day" data-date="24">24</div>
+                  <div class="day" data-date="25">25</div>
+                  <div class="day" data-date="26">26</div>
+                  <div class="day" data-date="27">27</div>
+                  <div class="day" data-date="28">28</div>
+                  <div class="day" data-date="29">29</div>
+                  <div class="day" data-date="30">30</div>
+                  <div class="day" data-date="31">31</div>
+                </div>
+                <div id="current-date"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    
-      
-      <div class="col-md-4">
-        <div class="calendar card" style="height: 285px;">
-          <div class="calendar-header">
-            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-              <i class="bi bi-chevron-left" style="cursor: pointer; color: #090582;"></i>
-              <span style="font-size: 12px; font-weight: bold;color: #090582;">Sep 2024</span>
-              <i class="bi bi-chevron-right" style="cursor: pointer; color: #090582;"></i>
-            </div>
-          </div>
-          <div class="days">
-            <div class="fw-bold" style="color: #090582;">SUN</div>
-<div class="fw-bold" style="color: #090582;">MON</div>
-<div class="fw-bold" style="color: #090582;">TUE</div>
-<div class="fw-bold" style="color: #090582;">WED</div>
-<div class="fw-bold" style="color: #090582;">THU</div>
-<div class="fw-bold" style="color: #090582;">FRI</div>
-<div class="fw-bold" style="color: #090582;">SAT</div>
 
-            <div class="other-month">30</div>
-            <div class="other-month">31</div>
-            <div class="day" data-date="1">1</div>
-            <div class="day" data-date="2">2</div>
-            <div class="day" data-date="3">3</div>
-            <div class="day" data-date="4">4</div>
-            <div class="day" data-date="5">5</div>
-            <div class="day" data-date="6">6</div>
-            <div class="day" data-date="7">7</div>
-            <div class="day" data-date="8">8</div>
-            <div class="day" data-date="9">9</div>
-            <div class="day" data-date="10">10</div>
-            <div class="day" data-date="11">11</div>
-            <div class="day" data-date="12">12</div>
-            <div class="day" data-date="13">13</div>
-            <div class="day" data-date="14">14</div>
-            <div class="day" data-date="15">15</div>
-            <div class="day" data-date="16">16</div>
-            <div class="day" data-date="17">17</div>
-            <div class="day" data-date="18">18</div>
-            <div class="day" data-date="19">19</div>
-            <div class="day" data-date="20">20</div>
-            <div class="day" data-date="21">21</div>
-            <div class="day" data-date="22">22</div>
-            <div class="day" data-date="23">23</div>
-            <div class="day" data-date="24">24</div>
-            <div class="day" data-date="25">25</div>
-            <div class="day" data-date="26">26</div>
-            <div class="day" data-date="27">27</div>
-            <div class="day" data-date="28">28</div>
-            <div class="day" data-date="29">29</div>
-            <div class="day" data-date="30">30</div>
-            <div class="day" data-date="31">31</div>
-          </div>
-          <div id="current-date"></div>
-        </div>
-      </div>
-    </div>
-    <section>
-      <div class="row-12">
-          <div class="col-4 mt-1"></div>
-          <div class="grid gap-2"></div>
-          <div>
-              <div class="card rounded-4 mt-4" style="width: 100%; padding: 20px; height: 183px; margin: 30px 20px 20px 10px;">
-                  <div class="card-body">
-                      <h5 class="card-title" style="font-size: 1.5em; color: #ff8412; text-align: center; margin-bottom: 10px;">
-                          Thoughts of the day
-                      </h5>
-                      <p></p>
-  
-                      <p id="thought" style="font-size: 1em; color: #090582; text-align: center;">
-                          
-                      </p>
+            <section>
+              <div class="row">
+                  <div class="col-12 col-sm-10 col-md-8 col-lg-6 "> 
+                      <div class="card rounded-4 shadow-sm my-4" 
+                           style="padding: 1px; height: 185px;width: 890px; border: none; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                          <div class="card-body">
+                              <h5 class="card-title" style="font-size: 1.5em; color: #ff8412; text-align: center; margin-bottom: 10px;">
+                                  Thoughts of the Day
+                              </h5>
+                              <p></p>
+                              <p id="thought" style="font-size: 1em; color: #090582; text-align: center;"></p>
+                          </div>
+                      </div>
                   </div>
               </div>
-          </div>
-      </div>
-  </section>
-      
+          </section>
 
-  <div class="row">
-    <div class="col-4 mb-4">
-        <div class="row-6">
-
-            <div class="card rounded-4" style="width: 100%; padding: 25px; position: relative; height: 232px;">
-                <div class="d-flex align-items-center mb-3">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTsAa5Wv6MKmxcr103bu9qh9F3hgMasLTeHsSOv9LHrIcA-oqDgTklpQxtkT8VH2Z4PU&usqp=CAU"
-                  alt="Employee Image" id="employeeImage" class="img-fluid" 
-                  style="border-radius: 50%; width: 60px; height: 60px; object-fit: cover; border: 3px solid #090582;">
-                    <div class="ms-3">
-                        <h5 class="mb-0"><strong id="employeeName">Danish Ahmed</strong></h5>
-                        <p class="text-muted mb-0 fw-bold" id="employeePosition" style="font-size: small; color: #090582;">HR Manager</p>
+          <div class="row">
+            <div class="col-4 mb-4">
+                <div class="row-6">
+                  
+                    <div class="card rounded-4" style="width: 100%; padding: 25px; position: relative; height: 180px; border: none; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                        <div class="d-flex align-items-center mb-3">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTsAa5Wv6MKmxcr103bu9qh9F3hgMasLTeHsSOv9LHrIcA-oqDgTklpQxtkT8VH2Z4PU&usqp=CAU"
+                          alt="Employee Image" id="employeeImage" class="img-fluid" 
+                          style="border-radius: 50%; width: 60px; height: 60px; object-fit: cover; ">
+                            <div class="ms-3">
+                                <h5 class="mb-0"><strong id="employeeName">Danish Ahmed</strong></h5>
+                                <p class="text-muted mb-0 fw-bold" id="employeePosition" style="font-size: small; color: #090582;">HR Manager</p>
+                            </div>
+                        </div>
+                        <div class="card-body" style="text-align: center;">
+                          <div class="card-body" style="text-align: center;">
+                            <p class="mb-1" id="employeeJoinDate" style="font-size: 14px; color: #090582;">
+                                <strong>Joining Date:</strong> 12th May, 2018</p>
+                            <p class="mb-1" id="employeeTasks" style="font-size: 14px; color: #090582;">
+                                <strong>Active Tasks:</strong> 23</p>
+                            <p class="mb-1" id="employeeExt" style="font-size: 14px; color: #090582;">
+                                <strong>Ext No:</strong> 1234</p>
+                                <p class="mb-1" id="employeeDob" style="font-size: 14px; color: #090582;">
+                                  <strong>DOB:</strong> 5th June, 1990
+                              </p>
+                        </div>
+                      </div>
+                        <i class="bi bi-chevron-left icon" id="leftChevron" style="position: absolute; top: 63%; left: 6px; font-size: 24px; cursor: pointer; transform: translateY(-50%);color: #090582;"></i>
+                        <i class="bi bi-chevron-right icon" id="rightChevron" style="position: absolute; top: 63%; right: 6px; font-size: 24px; cursor: pointer; transform: translateY(-50%);color: #090582;"></i>
                     </div>
                 </div>
-                <div class="card-body" style="text-align: center;">
-                  <div class="card-body" style="text-align: center;">
-                    <p class="mb-1" id="employeeJoinDate" style="font-size: 14px; color: #090582;">
-                        <strong>Joining Date:</strong> 12th May, 2018</p>
-                    <p class="mb-1" id="employeeTasks" style="font-size: 14px; color: #090582;">
-                        <strong>Active Tasks:</strong> 23</p>
-                    <p class="mb-1" id="employeeExt" style="font-size: 14px; color: #090582;">
-                        <strong>Ext No:</strong> 1234</p>
-                        <p class="mb-1" id="employeeDob" style="font-size: 14px; color: #090582;">
-                          <strong>DOB:</strong> 5th June, 1990
-                      </p>
-                </div>
-              </div>
-                <i class="bi bi-chevron-left icon" id="leftChevron" style="position: absolute; top: 63%; left: 6px; font-size: 24px; cursor: pointer; transform: translateY(-50%);color: #090582;"></i>
-                <i class="bi bi-chevron-right icon" id="rightChevron" style="position: absolute; top: 63%; right: 6px; font-size: 24px; cursor: pointer; transform: translateY(-50%);color: #090582;"></i>
-            </div>
-        </div>
-
-            <div class="row-6">
-
-                <div >
-                    <div class="card rounded-4 mt-4" style="width: 100%; padding: 30px; height: 183px;">
+        
+        
+        
+                <div class="row-6">
+                    <div>
+                      <div class="card rounded-4 mt-4" style="width: 100%; padding: 30px; height: 255px; border: none; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
                         <div class="card-body">
-                          <h5 class="card-title" style="font-size: 1.5em; color: #ff8412; text-align: center; margin-bottom: 10px;">IATT Branch</h5>
-                          <p style="font-size:1em; color: #090582; text-align: center;">India and Srilanka</p>
-                            <div class="d-flex avatar-group mt-2">  
-                                </div>
-                          </div>
+                          <h5 class="card-title text-center" style="font-size: 1.5em; color: #ff8412; margin-bottom: 1px; background-color: rgba(255, 132, 18, 0.1); padding: 1px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 5px;">
+                            IATT Branch
+                          </h5>
+                          <ul class="list-unstyled">
+                            <li style="font-weight: bold; color: #ff8412;">• Chennai</li>
+                            <li style="font-weight: normal;font-size: 12px;">IATT Technologies</li>
+                            <li style="font-weight: normal; font-size: 10px;">D3, Manju Royal Villa, Sankaralingar Street, Gerugambakkam, Chennai 600122. India</li>
+                            <li style="font-weight: bold; color: #ff8412;">• Sri Lanka</li>
+                            <li style="font-weight: normal;font-size: 12px;">IATT Technologies</li>
+                            <li style="font-weight: normal; font-size: 10px;">Karadippokku, Kilinochchi. SriLanka - 44000</li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
-            </div>
-           
-        </div>
-
-        <div class="col-4">
-          <div>
-              <div class="card card-holidays" style="width: 100%; height: 435px; overflow: hidden;">
-                  <div class="card-header d-flex justify-content-between align-items-center" style="background-color: #fff; position: sticky; top: 0; z-index: 1;">
-                      <h6 class="mb-0" style="color: #ff8412;font-size:1em;"><strong>Holidays</strong></h6>
-                      <div class="dropdown">
-                         
-                          <!-- <ul class="dropdown-menu" id="dropdownMenu" style="display: none;">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
-                              <li><a class="dropdown-item" href="#">Delete</a></li>
-                          </ul> -->
+        
+               
+                <div class="col-4">
+                  <div>
+                    <div class="card card-holidays" style="width: 100%; height: 450px; overflow: hidden; border: none; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+                      <div class="card-header d-flex justify-content-between align-items-center" style="background-color: #fff; position: sticky; top: 0; z-index: 1;">
+                        <h6 class="mb-0" style="color: #ff8412; font-size: 1em;"><strong>Holidays</strong></h6>
                       </div>
+                      <div class="colored-line" style="background-color: #ff8412; height: 2px; margin: 0;"></div> 
+                
+                      <div class="divider"></div>
+                
+                      <div class="holiday-content" style="overflow-y: auto; height: calc(100% - 50px);">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div>
+                            <span class="date">07</span><br>
+                            <span class="month-year">September 2024</span>
+                          </div>
+                          <div class="text-start ms-3">
+                            <p class="event-title mb-3">Vinayaka<br> Chaturthi</p>
+                          </div>
+                        </div>
+                        <div class="divider"></div>
+                
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div>
+                            <span class="date">14</span><br>
+                            <span class="month-year">September 2024</span>
+                          </div>
+                          <div class="text-start ms-3">
+                            <p class="event-title mb-3">Onam</p>
+                          </div>
+                        </div>
+                        <div class="divider"></div>
+                
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div>
+                            <span class="date">16</span><br>
+                            <span class="month-year">September<br>2024</span>
+                          </div>
+                          <div class="text-start ms-3">
+                            <p class="event-title mb-3">Eid e Milad</p>
+                          </div>
+                        </div>
+                        <div class="divider"></div>
+                
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div>
+                            <span class="date">18</span><br>
+                            <span class="month-year">September<br>2024</span>
+                          </div>
+                          <div class="text-start ms-3">
+                            <p class="event-title mb-3">Sree Narayana<br> Guru Jayanthi</p>
+                          </div>
+                        </div>
+                        <div class="divider"></div>
+                
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div>
+                            <span class="date">28</span><br>
+                            <span class="month-year">September<br>2024</span>
+                          </div>
+                          <div class="text-start ms-3">
+                            <p class="event-title mb-3">4th Saturday</p>
+                          </div>
+                        </div>
+                        <div class="divider"></div>
+                
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div>
+                            <span class="date">02</span><br>
+                            <span class="month-year">October<br>2024</span>
+                          </div>
+                          <div class="text-start ms-3">
+                            <p class="event-title mb-3">Gandhi birthday</p>
+                          </div>
+                        </div>
+                        <div class="divider"></div>
+                
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                          <div>
+                            <span class="date">11</span><br>
+                            <span class="month-year">October<br>2024</span>
+                          </div>
+                          <div class="text-start ms-3">
+                            <p class="event-title mb-3">Maha Navami</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-      
-                  <div class="divider"></div>
-      
-                  <div class="holiday-content" style="overflow-y: auto; height: calc(100% - 50px);">
-                      <div class="d-flex justify-content-between align-items-center mb-1">
-                          <div>
-                              <span class="date">07</span><br>
-                              <span class="month-year">September 2024</span>
-                          </div>
-                          <div class="text-start ms-3">
-                              <p class="event-title mb-3">Vinayaka<br> Chaturthi</p>
-                          </div>
-                      </div>
-      
-                      <div class="divider"></div>
-      
-                      <div class="d-flex justify-content-between align-items-center mb-1">
-                          <div>
-                              <span class="date">14</span><br>
-                              <span class="month-year">September 2024</span>
-                          </div>
-                          <div class="text-start ms-3">
-                              <p class="event-title mb-3">Onam</p>
-                          </div>
-                      </div>
-      
-                      <div class="divider"></div>
-      
-                      <div class="d-flex justify-content-between align-items-center mb-1">
-                          <div>
-                              <span class="date">16</span><br>
-                              <span class="month-year">September<br>2024</span>
-                          </div>
-                          <div class="text-start ms-3">
-                              <p class="event-title mb-3">Eid e Milad</p>
-                          </div>
-                      </div>
-      
-                      <div class="divider"></div>
-      
-                      <div class="d-flex justify-content-between align-items-center mb-1">
-                          <div>
-                              <span class="date">18</span><br>
-                              <span class="month-year">September<br>2024</span>
-                          </div>
-                          <div class="text-start ms-3">
-                              <p class="event-title mb-3">Sree Narayana<br> Guru Jayanthi</p>
-                          </div>
-                      </div>
-      
-                      <div class="divider"></div>
-      
-                      <div class="d-flex justify-content-between align-items-center mb-1">
-                          <div>
-                              <span class="date">28</span><br>
-                              <span class="month-year">September<br>2024</span>
-                          </div>
-                          <div class="text-start ms-3">
-                              <p class="event-title mb-3">4th Saturday</p>
-                          </div>
-                      </div>
-      
-                      <div class="divider"></div>
-      
-                      <div class="d-flex justify-content-between align-items-center mb-1">
-                          <div>
-                              <span class="date">02</span><br>
-                              <span class="month-year">October<br>2024</span>
-                          </div>
-                          <div class="text-start ms-3">
-                              <p class="event-title mb-3">Gandhi birthday</p>
-                          </div>
-                      </div>
-      
-                      <div class="divider"></div>
-      
-                      <div class="d-flex justify-content-between align-items-center mb-1">
-                          <div>
-                              <span class="date">11</span><br>
-                              <span class="month-year">October<br>2024</span>
-                          </div>
-                          <div class="text-start ms-3">
-                              <p class="event-title mb-3">Maha Navami</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
-      
-
-<div class="birthday-card col-4 position-relative" style="border: 1px solid #ccc; padding: 15px; border-radius: 10px;">
-    <div class="card-header" style="font-size: 20px; font-weight: bold; text-align: center;">Happy Birthday</div>
-  
-    <img id="profileImg" src=""  class="profile-img" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; display: block; margin: 10px auto;">
-    <div id="birthdayMessage" style="font-size: 16px; text-align: center; margin-top: 10px;"></div> 
-    
-    <div class="name" id="employeeName" style="font-size: 18px; font-weight: bold; text-align: center; margin-top: 10px;"></div>
-    <div class="date" id="employeeDate" style="font-size: 15px; text-align: center; color: #777;"></div>
-  
-   
-    <div class="upcoming-birthday mt-3 position-relative" style="border-top: 1px solid #ccc; padding-top: 10px;">
-      <h5 style="font-size: 18px; text-align: center;">Upcoming Birthday</h5>
-      <div class="d-flex align-items-center justify-content-center position-relative">
+                </div>
         
-        <i class="bi bi-chevron-left icon" id="leftupcammingbirthday" style="position: absolute; top: 50%; left: -20px; font-size: 24px; cursor: pointer; transform: translateY(-50%); color: blue;"></i>
         
-        <img id="upcomingProfileImg" src="" alt="Upcoming Profile" class="profile-img" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
         
-        <div class="ms-3">
+              <div class="col-4">
+                
+        <div class="birthday-card col-4 position-relative" style=" padding: 15px; border-radius: 10px;">
+            <div class="card-header" style="font-size: 20px; font-weight: bold; text-align: center;">Happy Birthday</div>
           
-          <div class="name" id="upcomingName" style="font-size: 15px; font-weight: bold; color: #333; text-align: left;"></div>
-          <div class="date" id="upcomingDate" style="font-size: 14px; color: #777; text-align: left;"></div>
-        </div>
-  
-        <i class="bi bi-chevron-right icon" id="rightupcammingbirthday" style="position: absolute; top: 50%; right: -20px; font-size: 24px; cursor: pointer; transform: translateY(-50%); color: blue;"></i>
-      </div>
-    </div>
-  </div>
-
-
+            <img id="profileImg" src=""  class="profile-img" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; display: block; margin: 10px auto;">
+            <div id="birthdayMessage" style="font-size: 16px; text-align: center; margin-top: 10px;"></div> 
+            
+            <div class="name" id="employeeName" style="font-size: 18px; font-weight: bold; text-align: center; margin-top: 10px;"></div>
+            <div class="date" id="employeeDate" style="font-size: 15px; text-align: center; color: #777;"></div>
+          
+           
+            <div class="upcoming-birthday mt-3 position-relative" style="border-top: 1px solid #ccc; padding-top: 10px;">
+              <h5 style="font-size: 18px; text-align: center;">Upcoming Birthday</h5>
+              <div class="d-flex align-items-center justify-content-center position-relative">
+                
+                <i class="bi bi-chevron-left icon" id="leftupcammingbirthday" style="position: absolute; top: 50%; left: -20px; font-size: 24px; cursor: pointer; transform: translateY(-50%); color: blue;"></i>
+                
+                <img id="upcomingProfileImg" src="" alt="Upcoming Profile" class="profile-img" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                
+                <div class="ms-3">
+                  
+                  <div class="name" id="upcomingName" style="font-size: 15px; font-weight: bold; color: #333; text-align: left;"></div>
+                  <div class="date" id="upcomingDate" style="font-size: 14px; color: #777; text-align: left;"></div>
+                </div>
+          
+                <i class="bi bi-chevron-right icon" id="rightupcammingbirthday" style="position: absolute; top: 50%; right: -20px; font-size: 24px; cursor: pointer; transform: translateY(-50%); color: blue;"></i>
+              </div>
+            </div>
+            </div>
+          </div>
 
 
   <div class="container mt-1">
-    <div class="row justify-content-center">
-        <div class="col-md-12 ">
-            <div class="card shadow-sm">
-              <center>
-    <h5 class="card-title" style="color: #ff8412; font-size: 28px;">IATT Events</h5>
-</center>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow-sm" 
+                style="width: 890px; padding: 1px; height: 300px; border: none; border-radius: 5px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
+              
+                <center>
+                    <h5 class="card-title" style="color: #ff8412; font-size: 28px;">IATT Events</h5>
+                </center>
                 <div class="card-body">
                     <div class="swatch">
                         <div class="container">
-                          <div class="container mt-4">
-                            <div class="row">
-                              <div class="container mt-4">
-                                <div class="row" id="gallery"></div>
-                            </div>
-                       
                             <div class="container mt-4">
-                              <div class="row" id="gallery"></div>
-                          </div>
-                          
-                         
-                          <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="image-gallery-title" aria-hidden="true">
-                              <div class="modal-dialog modal-lg" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header position-relative"> 
-                                      <h5 class="modal-title" id="image-gallery-title">Event Images</h5> 
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 1rem; top: 1rem; border-radius: 50%; padding: 0.5rem; background-color: rgb(244, 240, 240); color: rgb(237, 25, 25); border: none; z-index: 1;">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                      <div class="modal-body text-center">
-                                          <img id="image-gallery-image" class="img-fluid" src="" alt="Gallery Image">
-                                          <p class="text-center mt-3" id="modal-caption">Modal for Image Gallery</p> 
-                                      </div>
-                                      <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" id="show-previous-image">
-                                              <i class="fas fa-chevron-left"></i> Previous
-                                          </button>
-                                          <button type="button" class="btn btn-secondary" id="show-next-image">
-                                              Next <i class="fas fa-chevron-right"></i>
-                                          </button>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
+                                <div class="row">
+                                    <div class="container mt-4">
+                                        <div class="row" id="gallery"></div>
+                                    </div>
   
+                                    <div class="container mt-4">
+                                        <div class="row" id="gallery"></div>
+                                    </div>
+  
+                                    <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="image-gallery-title" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header position-relative">
+                                                <h5 class="modal-title" id="image-gallery-title">Event Images</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 1rem; top: 1rem; color: rgb(237, 25, 25); background: none; border: none; z-index: 1;">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body text-center" style="max-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                              <img id="image-gallery-image" class="img-fluid" src="" alt="Gallery Image" style="max-width: 100%; max-height: 60vh; object-fit: contain;">
+                                              <p class="text-center mt-3" id="modal-caption">Modal for Image Gallery</p>
+                                          </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary btn-lg" id="show-previous-image" style="background-color: #090582; border-color: #fefaf6;padding:12px 24px; font-size: 12px;">
+                                                        <i class="fas fa-chevron-left"></i> Previous
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary btn-lg" id="show-next-image" style="background-color: #090582; border-color: #f4f0ec;padding:12px 35px; font-size: 12px;">
+                                                        Next <i class="fas fa-chevron-right"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oB5F4oI7VeT2ZwA7lg8F1taff3hU+yt3e1w3xF8Ul4fFyeLp9xI9CO2BzVxNn8xg" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-vYY4pfS3udAYuTrnqMRe+BeP3CxtS6LNmXyHcS6VzJ6n4Xj/J2Ihpc7efJq7cfw6" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

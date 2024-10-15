@@ -494,6 +494,8 @@
                                     </p>
                                 </div>
                             </div>
+
+
                             <!-- Calendar -->
                             <div class="col-md-4">
                                 <div class="card p-3 shadow-sm border-0">
@@ -549,6 +551,9 @@
                                     </div>
                                 </div>
                             </div>
+
+
+
                             <!-- Thoughts -->
                             <div class="row">
                                 <div class="col-12 col-sm-10 col-md-8 col-lg-6 ">
@@ -565,6 +570,8 @@
                                     </div>
                                 </div>
                             </div>
+
+
 
                         <div class="row">
                             <!-- First Column: Employee Details & IATT Branch -->
@@ -603,6 +610,8 @@
                                         style="position: absolute; top: 55%; right: 15px; font-size: 20px; cursor: pointer; color: #090582; transform: translateY(-50%);"></i>
                                 </div>
 
+
+
                                 <!-- IATT Branch Card -->
                                 <div class="card shadow-sm mt-3"
                                     style="padding: 15px; width: 200px; height: 290px; border: none; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
@@ -639,6 +648,8 @@
                                         </div>     
                             </div>
                          </div>
+
+
 
                                 <!-- Second Column: Holidays Card -->
                                 <div class="col-md-5 mb-4"> <!-- Increased column width -->
@@ -744,6 +755,7 @@
                                 </div>
 
 
+
                                 <!-- Third Column: Birthday Card -->
                             <div class="col-md-4 "> <!-- Keep the column width the same -->
                                     <div class="card birthday-card"
@@ -779,6 +791,7 @@
                                     </div>
                                 </div>
                             </div>
+
 
 
 
@@ -850,6 +863,8 @@
              </div>
         </div>
     </div>
+
+
     <!-- Bootstrap JS and dependencies for interactive components -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-oB5F4oI7VeT2ZwA7lg8F1taff3hU+yt3e1w3xF8Ul4fFyeLp9xI9CO2BzVxNn8xg"
@@ -877,6 +892,8 @@
             });
         });
 
+
+
         // Add an event listener to the "websiteToggle" element (the main Website menu item)
         document.getElementById("websiteToggle").addEventListener("click", function () {
 
@@ -899,6 +916,8 @@
             }
         });
 
+
+
         document.addEventListener('DOMContentLoaded', function () {
             const sidebarToggle = document.getElementById('sidebarToggle'); // Get the toggle button
             const sidebar = document.getElementById('sidebar'); // Get the sidebar
@@ -918,6 +937,7 @@
                 }
             });
         });
+
 
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -989,6 +1009,9 @@
             }, 60000); // Update every minute
         });
 
+
+
+
         async function loadThought() {
             try {
                 const response = await fetch('thoughts.json');
@@ -1014,6 +1037,9 @@
 
 
         window.onload = startThoughtRefresh;
+
+
+
 
         let currentEmployeeIndex = 0;  // Keeps track of the current employee being displayed
         let employees = [];  // Will hold the array of employee data
@@ -1054,6 +1080,9 @@
             }
             updateEmployeeDetails();  // Update displayed employee
         });
+
+
+
 
         // Event listener for the right chevron to go to the next employee
         document.getElementById("rightChevron").addEventListener("click", function () {
@@ -1151,6 +1180,8 @@
             .catch(error => console.error('Error fetching employee data:', error));
 
 
+
+
         // Function to fetch images from the 'eventimage.json' file
         function fetchImages() {
             fetch('eventimage.json')
@@ -1246,4 +1277,4 @@
 
     </script>
     </body>
-</html>
+    </html>
